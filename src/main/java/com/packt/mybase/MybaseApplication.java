@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -43,10 +44,10 @@ public class MybaseApplication implements CommandLineRunner {
 		arepository.saveAll(Arrays.asList(author1, author2, author3, author4));
 
 		// Add car object and link to owners and save these to db
-		Book book1 = new Book("Crying in H mart", "Memoir", 2021, 4.26f, author1);
-		Book book2 = new Book("Great Circle", "Historical Fiction", 2021, 4.11f, author2);
-		Book book3 = new Book("Small Things Like These", "Fiction", 2021, 4.18f, author3);
-		Book book4 = new Book("Tomorrow, and Tomorrow, and Tomorrow", "Fiction", 2022, 4.15f, author4);
+		Book book1 = new Book("Crying in H mart", "Memoir", 2021, BigDecimal.valueOf(4.26), author1);
+		Book book2 = new Book("Great Circle", "Historical Fiction", 2021, BigDecimal.valueOf(4.11), author2);
+		Book book3 = new Book("Small Things Like These", "Fiction", 2021, BigDecimal.valueOf(4.18), author3);
+		Book book4 = new Book("Tomorrow, and Tomorrow, and Tomorrow", "Fiction", 2022, BigDecimal.valueOf(4.15), author4);
 		repository.saveAll(Arrays.asList(book1, book2, book3, book4));
                   
 		for (Book book : repository.findAll()) {

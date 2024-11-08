@@ -7,7 +7,7 @@ I changed domains from *cars* specified in the book to *books* from my [Goodread
 ## TO-DO (Fullstack project Roadmap):
 - [ ] Backend
   - [x] Creating and Accessing DB through JPA
-  - [ ] Creating RESTful web service with Spring Boot
+  - [x] Creating RESTful web service with Spring Boot
   - [ ] Backend Security & Test
   - [ ] Add automatical scraping from Goodreads page
 - [ ] Frontend

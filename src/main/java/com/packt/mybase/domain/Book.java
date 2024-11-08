@@ -1,5 +1,7 @@
 package com.packt.mybase.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -8,6 +10,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import java.math.BigDecimal;
 
 @Entity
 public class Book {
@@ -18,12 +21,13 @@ public class Book {
 	private String title, genre;
 	@Column(name="`pubYear`", length=512)
 	private int pubYear;
-	private float rating;
+	@Column(precision = 4, scale = 2)
+	private BigDecimal rating;
 
     //? getter, setter
     public Book() {}
 
-    public Book(String title, String genre, int pubYear, float rating, Author author) {
+    public Book(String title, String genre, int pubYear, BigDecimal rating, Author author) {
 		super();
 		this.title = title;
 		this.genre = genre;
@@ -78,11 +82,11 @@ public class Book {
 		this.pubYear = pubYear;
 	}
 
-	public float getRating() {
+	public BigDecimal getRating() {
 		return rating;
 	}
 
-	public void setRating(int rating) {
+	public void setRating(BigDecimal rating) {
 		this.rating = rating;
 	}
 

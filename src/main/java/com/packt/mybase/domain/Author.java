@@ -3,6 +3,9 @@ package com.packt.mybase.domain;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,6 +14,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Author {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -27,6 +31,7 @@ public class Author {
 		this.birthYear = birthYear;
 	}
 	
+	@JsonIgnore
 	@OneToMany(cascade=CascadeType.ALL, mappedBy="author")
 	private List<Book> books;
 	
