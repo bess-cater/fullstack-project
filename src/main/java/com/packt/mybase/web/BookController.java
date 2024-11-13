@@ -10,7 +10,6 @@ import com.packt.mybase.domain.BookRepository;
 public class BookController {
 
     @Autowired
-    
     private BookRepository bookrepo;
 
     @RequestMapping("/allbooks")

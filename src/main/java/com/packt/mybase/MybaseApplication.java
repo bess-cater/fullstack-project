@@ -15,8 +15,6 @@ import com.packt.mybase.domain.Book;
 import com.packt.mybase.domain.BookRepository;
 import com.packt.mybase.domain.Author;
 import com.packt.mybase.domain.AuthorRepository;
-import com.packt.mybase.domain.UserBase;
-import com.packt.mybase.domain.User;
 
 @SpringBootApplication
 public class MybaseApplication implements CommandLineRunner {	
@@ -30,9 +28,6 @@ public class MybaseApplication implements CommandLineRunner {
 
     @Autowired
     private AuthorRepository arepository;
-
-	@Autowired
-	private UserBase ubase; 
 
 	public static void main(String[] args) {
 		SpringApplication.run(MybaseApplication.class, args);
@@ -59,8 +54,5 @@ public class MybaseApplication implements CommandLineRunner {
 			Author a = book.getAuthor();
 			logger.info(book.getTitle() + " " + a.getLastname());
 		}
-
-		// ubase.save(new User("liza", "$2a$12$hf8UlxjI0AWHlctpHPo3Tex9vXsR6vetL0FdWsloWrmeOlY9y5frC", "USER"));
-		// ubase.save(new User("adm", "$2a$10$naxtJvr/mijy0JgmOuiMz..hsSHUsyYstb8Z01B/Rfrh8LerhNr7q", "ADMIN"));
 	}
 }
