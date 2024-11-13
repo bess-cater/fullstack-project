@@ -5,13 +5,15 @@ The project is done following and referencing [this book](https://github.com/wik
 I changed domains from *cars* specified in the book to *books* from my [Goodreads](https://www.goodreads.com/user/show/40533086?ref=nav_profile_l)
 
 ## TO-DO (Fullstack project Roadmap):
-- [ ] Backend
+- [x] Backend
   - [x] Creating and Accessing DB through JPA
   - [x] Creating RESTful web service with Spring Boot
-  - [ ] Backend Security & Test
-  - [ ] Add automatical scraping from Goodreads page
+  - [x] Backend Security & Test
+       Could not get the result with the book, so referred to [this](https://www.devyummi.com/page?id=668cfe58d3b43a6241eb6b6c) wonderful tutorial, as a result:
+       - [x] JWT Authentification & Sign-up
+  - [ ] ? MAYBE!!! Add automatical scraping from Goodreads page
 - [ ] Frontend
-  - [ ] Starting with React
+  - [x] Starting with React
   - [ ] Use REST API with React
   - [ ] Useful 3rd party components
 - [ ] Fullstack

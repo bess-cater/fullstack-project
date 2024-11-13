@@ -23,6 +23,12 @@ target/
 *.iml
 *.ipr
 
+/backend/src/main/resources/application.properties
+/backend/*
+!/backend/src/main/java/
+
+/frontapp/*
+!/frontapp/src/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
