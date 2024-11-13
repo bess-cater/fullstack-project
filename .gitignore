@@ -22,6 +22,14 @@ target/
 *.iws
 *.iml
 *.ipr
+/frontapp/build
+/frontapp/node_modules
+*.json
+/frontapp/public
+backend/target
+backend/src/test
+backend/src/main/resources
+
 
 ### NetBeans ###
 /nbproject/private/
