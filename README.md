@@ -9,13 +9,14 @@ I changed domains from *cars* specified in the book to *books* from my [Goodread
   - [x] Creating and Accessing DB through JPA
   - [x] Creating RESTful web service with Spring Boot
   - [x] Backend Security & Test
+
    Could not get the result with the book, so referred to [this](https://www.devyummi.com/page?id=668cfe58d3b43a6241eb6b6c) wonderful tutorial, as a result:
        - [x] JWT Authentification & Sign-up
 
-  - [] Add automatical scraping from Goodreads page
+  - [ ] MAYBE>>> Add automatical scraping from Goodreads page
 - [ ] Frontend
   - [x] Starting with React
-  - [ ] Use REST API with React
+  - [x] Use REST API with React
   - [ ] Useful 3rd party components
 - [ ] Fullstack
   - [ ] Setting up frontend for Spring Boot RESTful Web Service
