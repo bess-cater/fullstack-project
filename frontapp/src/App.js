@@ -6,7 +6,7 @@ function App() {
   const [desc, setDesc] = useState([]);
 
   const fetchData = () => {
-    const API_KEY = 'AIzaSyBvmvBf9scW6TAEMaBjccoHMIEhCs7DgiA';
+    const API_KEY = '';
     fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${search}&key=${API_KEY}`)
     .then(response => response.json())
     .then(desc => {
