@@ -1,10 +1,21 @@
-.App {
+.App{
   text-align: center;
+  color: green;
+  font-size: 36px
 }
-
+.list {
+  text-align: left;
+}
+.video{
+  display: flex;
+  margin-top: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.desc{
+  margin-left: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
