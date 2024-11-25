@@ -24,6 +24,10 @@ target/
 *.ipr
 /frontapp/build
 /frontapp/node_modules
+/shopping-list/build
+/shopping-list/node_modules
+/router_test/build
+/router_test/node_modules
 *.json
 /frontapp/public
 backend/target
