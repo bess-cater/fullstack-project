@@ -4,7 +4,8 @@ mvnw.cmd
 # /mybase/src/main/resources
 target/
 !.mvn/wrapper/maven-wrapper.jar
-
+/front-train/
+front-train/
 # !**/src/main/**/target/
 # !**/src/test/**/target/
 
@@ -33,8 +34,10 @@ target/
 backend/target
 backend/src/test
 backend/src/main/resources
-
-
+/books_front/node_modules
+books_front/node_modules
+targer
+/target
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

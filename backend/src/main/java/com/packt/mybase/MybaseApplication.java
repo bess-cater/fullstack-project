@@ -13,8 +13,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.packt.mybase.domain.Book;
 import com.packt.mybase.domain.BookRepository;
-import com.packt.mybase.domain.Author;
-import com.packt.mybase.domain.AuthorRepository;
+// import com.packt.mybase.domain.Author;
+// import com.packt.mybase.domain.AuthorRepository;
 import com.packt.mybase.domain.UserBase;
 import com.packt.mybase.domain.User;
 
@@ -28,8 +28,8 @@ public class MybaseApplication implements CommandLineRunner {
     private BookRepository repository;
     
 
-    @Autowired
-    private AuthorRepository arepository;
+    // @Autowired
+    // private AuthorRepository arepository;
 
 	@Autowired
 	private UserBase ubase; 
@@ -48,16 +48,16 @@ public class MybaseApplication implements CommandLineRunner {
 		// Author author4 = new Author("Gabrielle" , "Zevin", 1977);
 		// arepository.saveAll(Arrays.asList(author1, author2, author3, author4));
 
-		// // Add car object and link to owners and save these to db
-		// Book book1 = new Book("Crying in H mart", "Memoir", 2021, BigDecimal.valueOf(4.26), author1);
-		// Book book2 = new Book("Great Circle", "Historical Fiction", 2021, BigDecimal.valueOf(4.11), author2);
-		// Book book3 = new Book("Small Things Like These", "Fiction", 2021, BigDecimal.valueOf(4.18), author3);
-		// Book book4 = new Book("Tomorrow, and Tomorrow, and Tomorrow", "Fiction", 2022, BigDecimal.valueOf(4.15), author4);
-		// repository.saveAll(Arrays.asList(book1, book2, book3, book4));
+		// // // Add car object and link to owners and save these to db
+		Book book1 = new Book("Crying in H mart", "Memoir", 2021, BigDecimal.valueOf(4.26));
+		Book book2 = new Book("Great Circle", "Historical Fiction", 2021, BigDecimal.valueOf(4.11));
+		Book book3 = new Book("Small Things Like These", "Fiction", 2021, BigDecimal.valueOf(4.18));
+		Book book4 = new Book("Tomorrow, and Tomorrow, and Tomorrow", "Fiction", 2022, BigDecimal.valueOf(4.15));
+		repository.saveAll(Arrays.asList(book1, book2, book3, book4));
                   
 		for (Book book : repository.findAll()) {
-			Author a = book.getAuthor();
-			logger.info(book.getTitle() + " " + a.getLastname());
+			// Author a = book.getAuthor();
+			logger.info(book.getTitle() );
 		}
 
 		// ubase.save(new User("liza", "$2a$12$hf8UlxjI0AWHlctpHPo3Tex9vXsR6vetL0FdWsloWrmeOlY9y5frC", "USER"));

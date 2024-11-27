@@ -64,6 +64,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <!-- Spring WebMVC Dependency (for CORS and controller annotations) -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+    </dependency>
 	<dependency>
     		<groupId>io.jsonwebtoken</groupId>
     		<artifactId>jjwt-api</artifactId>
@@ -81,7 +91,7 @@
 		    <version>0.12.3</version>
 		    <scope>runtime</scope>
 		</dependency>		
-	<dependency>
+		<dependency>
 		    <groupId>org.mariadb.jdbc</groupId>
 		    <artifactId>mariadb-java-client</artifactId>
 		</dependency>

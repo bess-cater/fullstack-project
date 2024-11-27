@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.packt.mybase.domain.Book;
 import com.packt.mybase.domain.BookRepository;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 public class BookController {
@@ -13,6 +14,7 @@ public class BookController {
     
     private BookRepository bookrepo;
 
+    @CrossOrigin(origins = "http://localhost:4000")
     @RequestMapping("/allbooks")
     public Iterable<Book> getBooks(){
         return bookrepo.findAll();

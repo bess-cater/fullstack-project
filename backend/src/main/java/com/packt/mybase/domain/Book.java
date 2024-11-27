@@ -27,27 +27,27 @@ public class Book {
     //? getter, setter
     public Book() {}
 
-    public Book(String title, String genre, int pubYear, BigDecimal rating, Author author) {
+    public Book(String title, String genre, int pubYear, BigDecimal rating) {
 		super();
 		this.title = title;
 		this.genre = genre;
 		this.pubYear = pubYear;
 		this.rating = rating;
-        this.author = author;
+        // this.author = author;
 
 	}
-    @ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "author")
-	private Author author;
+    // @ManyToOne(fetch = FetchType.LAZY)
+	// @JoinColumn(name = "author")
+	// private Author author;
 
 	//Getter  and  setter
-	public Author getAuthor()  {
-	    return author;
-	}
+	// public Author getAuthor()  {
+	//     return author;
+	// }
 
-	public void setAuthor(Author author)  {
-	    this.author = author;
-	}
+	// public void setAuthor(Author author)  {
+	//     this.author = author;
+	// }
 	
 	
 	public long getId() {
